@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    tools:context=".DrawableActivity">
+
+    <TextView
+        android:id="@+id/gradient1"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="@drawable/drawable_shape_gradient"
+        android:gravity="center"
+        android:text="TextView: Shape Gradient"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--    为什么不起作用？-->
+    <Button
+        android:id="@+id/gradient2"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="@drawable/drawable_selector_for_button"
+        android:gravity="center"
+        android:text="Button: Shape Gradient "
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/gradient1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="12dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
