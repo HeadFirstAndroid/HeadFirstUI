@@ -13,7 +13,11 @@ class MainActivity : AdhShowcaseActivity() {
         return mutableListOf(
                 createShowcaseItem("Drawable"){
                     startActivity(Intent(this@MainActivity,DrawableActivity::class.java))
-                }
+                },
+
+        createShowcaseItem("Background"){
+                                        startActivity(Intent(this@MainActivity,BackgroundActivity::class.java))
+        },
 
         )
     }
