@@ -20,11 +20,9 @@ class MainActivity : AdhShowcaseActivity() {
                 startActivity(Intent(this@MainActivity, BackgroundActivity::class.java))
             },
 
-            createShowcaseItem("ViewPager2 Tab+Fragment") {
+            createShowcaseItem("ViewPager2——TabLayout+Fragment") {
                 startActivity(Intent(this@MainActivity, ViewPager2Activity::class.java))
             },
-
-
             )
     }
 }
