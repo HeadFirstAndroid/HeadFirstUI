@@ -3,14 +3,26 @@
     package="me.yifeiyuan.hf.ui">
 
     <application
+        android:name=".App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:name=".App"
         android:supportsRtl="true"
         android:theme="@style/Theme.HeadFirstUI">
-        <activity android:name=".DrawableActivity"></activity>
+        <activity android:name=".viewpager2.ViewPager2Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".viewpager.ViewPagerActivity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/Theme.HeadFirstUI.NoActionBar" />
+        <activity android:name=".BackgroundActivity" />
+        <activity android:name=".DrawableActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
