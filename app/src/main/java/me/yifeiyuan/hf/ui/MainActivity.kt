@@ -6,6 +6,7 @@ import android.os.Bundle
 import me.yifeiyuan.adh.showcase.AdhShowcaseActivity
 import me.yifeiyuan.adh.showcase.AdhShowcaseItem
 import me.yifeiyuan.hf.ui.checkbox.CheckBoxActivity
+import me.yifeiyuan.hf.ui.layoutinflater.InflaterActivity
 import me.yifeiyuan.hf.ui.progressdialog.ProgressDialogActivity
 import me.yifeiyuan.hf.ui.viewpager2.ViewPager2Activity
 
@@ -32,6 +33,15 @@ class MainActivity : AdhShowcaseActivity() {
             createShowcaseItem("ProgressDialog ") {
                 startActivity(Intent(this@MainActivity, ProgressDialogActivity::class.java))
             },
+
+            createShowcaseItem("InflaterActivity ") {
+                start(InflaterActivity::class.java)
+            },
+
             )
+    }
+
+    private fun start(activityClass: Class<*>) {
+        startActivity(Intent(this, activityClass))
     }
 }
